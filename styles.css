@@ -405,9 +405,10 @@ h2.section-title::after {
 
 /* Produk Grid */
 .produk-grid {
-  display: grid;
+  display: grid ;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
+  align-items: stretch;
 }
 
 .card {
@@ -418,6 +419,9 @@ h2.section-title::after {
   transition: all 0.5s;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card::before {
@@ -494,7 +498,10 @@ h2.section-title::after {
 
 .card-body { 
   padding: 30px; 
-  text-align: center; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card h3 { 
@@ -522,6 +529,7 @@ h2.section-title::after {
   text-align: left;
   margin: 25px 0;
   padding: 0;
+  flex-grow: 1;
 }
 
 .package-features li {
@@ -580,11 +588,19 @@ h2.section-title::after {
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .btn-order:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.btn-order:active {
+  transform: translateY(-1px);
 }
 
 /* Visi Misi Achievement Cards */
@@ -989,7 +1005,7 @@ footer {
 
   .card {
     margin: 0 auto;
-    max-width: 450px;
+    width: 100%;
   }
 
   .card.featured {
@@ -1252,6 +1268,8 @@ footer {
 
   .card {
     border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .card img {
