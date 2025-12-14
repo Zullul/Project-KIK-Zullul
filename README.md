@@ -168,9 +168,9 @@ Mobile S:   < 480px
 
 Website ini dibuat untuk memenuhi ujian praktik mata pelajaran KIK kelas XII RPL dengan tema pembuatan website company profile.
 
-**Dikerjakan oleh**: [Nama Siswa]  
-**Kelas**: XII RPL [1/2]  
-**Tanggal**: Desember 2025
+**Dikerjakan oleh**: Zullul Ardan Rafayanto 
+**Kelas**: XII RPL 2  
+**Tanggal**:14 Desember 2025
 
 ---
 
