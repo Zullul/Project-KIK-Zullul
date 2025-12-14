@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CV. Parkin Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 50px;
+      border-radius: 20px;
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .form-group {
+      margin-bottom: 25px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 1.1rem;
+      color: #1e40af;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 1.05rem;
+      border: 2px solid rgba(59, 130, 246, 0.2);
+      border-radius: 10px;
+      font-family: 'Rajdhani', sans-serif;
+      transition: all 0.3s;
+      background: white;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+    .btn-submit {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: white;
+      padding: 18px 45px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+      transition: all 0.4s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+    .btn-submit:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+    .contact-info-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 35px;
+      border-radius: 20px;
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.4s;
+      height: 100%;
+    }
+    .contact-info-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+      border-color: #3b82f6;
+    }
+    @media (max-width: 768px) {
+      .contact-form {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-pattern"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">CV. PARKIN PRODUCTION</div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header style="min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 150px 20px 80px; background: linear-gradient(135deg, rgba(241, 245, 249, 0.8) 0%, rgba(226, 232, 240, 0.9) 100%);">
+    <div>
+      <h1 style="font-family: 'Exo 2', sans-serif; font-size: 3.5rem; color: #1e293b; margin-bottom: 20px;">Hubungi Kami</h1>
+      <p style="font-size: 1.3rem; color: #64748b; max-width: 600px; margin: 0 auto;">
+        Konsultasi gratis untuk kebutuhan sound system & lighting event Anda
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTACT INFO -->
+  <section style="padding: 100px 5%;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 80px;">
+        
+        <div class="contact-info-box">
+          <i class="fas fa-phone" style="font-size: 3rem; color: #3b82f6; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; color: #1e40af; margin-bottom: 15px;">Telepon</h3>
+          <p style="color: #64748b; font-size: 1.1rem; line-height: 1.8;">
+            <a href="tel:+6285353222333" style="color: #3b82f6; text-decoration: none;">+62 853-5322-2333</a><br>
+            24/7 Customer Service
+          </p>
+        </div>
+
+        <div class="contact-info-box">
+          <i class="fas fa-envelope" style="font-size: 3rem; color: #3b82f6; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; color: #1e40af; margin-bottom: 15px;">Email</h3>
+          <p style="color: #64748b; font-size: 1.1rem; line-height: 1.8;">
+            <a href="mailto:iyanparkin77@gmail.com" style="color: #3b82f6; text-decoration: none;">iyanparkin77@gmail.com</a><br>
+            Respon dalam 24 jam
+          </p>
+        </div>
+
+        <div class="contact-info-box">
+          <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #3b82f6; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; color: #1e40af; margin-bottom: 15px;">Alamat</h3>
+          <p style="color: #64748b; font-size: 1.1rem; line-height: 1.8;">
+            Banjar Patroman, Indonesia<br>
+            Survey lokasi gratis Banjar Patroman & sekitarnya
+          </p>
+        </div>
+
+        <div class="contact-info-box">
+          <i class="fab fa-whatsapp" style="font-size: 3rem; color: #3b82f6; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; color: #1e40af; margin-bottom: 15px;">WhatsApp</h3>
+          <p style="color: #64748b; font-size: 1.1rem; line-height: 1.8;">
+            <a href="https://wa.me/6285353222333" target="_blank" style="color: #3b82f6; text-decoration: none;">Chat Sekarang</a><br>
+            Fast Response
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section style="padding: 100px 5%; background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);">
+    <div class="container">
+      <h2 class="section-title">Kirim Pesan</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user" style="margin-right: 8px;"></i>Nama Lengkap *
+              </label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope" style="margin-right: 8px;"></i>Email *
+              </label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone" style="margin-right: 8px;"></i>No. Telepon / WhatsApp *
+              </label>
+              <input type="tel" id="phone" name="phone" placeholder="08123456789" required>
+            </div>
+
+            <div class="form-group">
+              <label for="event-type">
+                <i class="fas fa-calendar-alt" style="margin-right: 8px;"></i>Jenis Event *
+              </label>
+              <select id="event-type" name="event-type" required>
+                <option value="">-- Pilih Jenis Event --</option>
+                <option value="konser">Konser / Festival Musik</option>
+                <option value="wedding">Wedding / Pernikahan</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="school">School Event / Campus</option>
+                <option value="private">Private Party</option>
+                <option value="other">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="event-date">
+                <i class="fas fa-calendar-day" style="margin-right: 8px;"></i>Tanggal Event (Opsional)
+              </label>
+              <input type="date" id="event-date" name="event-date">
+            </div>
+
+            <div class="form-group">
+              <label for="location">
+                <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Lokasi Event *
+              </label>
+              <input type="text" id="location" name="location" placeholder="Contoh: Banjar Patroman, Gedung Serbaguna" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment-alt" style="margin-right: 8px;"></i>Pesan / Detail Kebutuhan *
+              </label>
+              <textarea id="message" name="message" placeholder="Ceritakan detail kebutuhan sound system, jumlah tamu, dan informasi lain yang relevan..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+
+          <div id="form-message" style="margin-top: 20px; padding: 15px; border-radius: 10px; display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section style="padding: 100px 5%;">
+    <div class="container">
+      <h2 class="section-title">Ikuti Kami di Social Media</h2>
+      <div style="text-align: center; margin-bottom: 40px;">
+        <p style="font-size: 1.2rem; color: #64748b; max-width: 700px; margin: 0 auto;">
+          Update dokumentasi event terbaru, promo spesial, dan tips audio visual di social media kami
+        </p>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <a href="https://wa.me/6285353222333" target="_blank" style="background: rgba(37, 211, 102, 0.1); border: 2px solid #25d366; color: #25d366; padding: 20px 40px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">
+          <i class="fab fa-whatsapp" style="font-size: 2rem;"></i>
+          WhatsApp
+        </a>
+        <a href="https://www.facebook.com/risdiyan.parkinsound.7" target="_blank" style="background: rgba(59, 89, 152, 0.1); border: 2px solid #3b5998; color: #3b5998; padding: 20px 40px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">
+          <i class="fab fa-facebook" style="font-size: 2rem;"></i>
+          Facebook
+        </a>
+        <a href="https://www.youtube.com/@iyan_parkinsound" target="_blank" style="background: rgba(255, 0, 0, 0.1); border: 2px solid #ff0000; color: #ff0000; padding: 20px 40px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">
+          <i class="fab fa-youtube" style="font-size: 2rem;"></i>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP (Optional) -->
+  <section style="padding: 100px 5%; background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);">
+    <div class="container">
+      <h2 class="section-title">Jam Operasional</h2>
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 40px; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.15); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+          <i class="fas fa-clock" style="font-size: 3.5rem; color: #3b82f6; margin-bottom: 25px;"></i>
+          <h3 style="font-size: 2rem; color: #1e40af; margin-bottom: 20px;">24/7 Customer Service</h3>
+          <p style="font-size: 1.2rem; color: #64748b; line-height: 1.9; margin-bottom: 25px;">
+            Tim kami siap melayani konsultasi dan pemesanan setiap hari, termasuk hari libur nasional. 
+            Respon cepat via WhatsApp untuk kebutuhan mendadak.
+          </p>
+          <div style="display: inline-flex; align-items: center; gap: 15px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(96, 165, 250, 0.1)); padding: 20px 30px; border-radius: 12px; border: 2px solid rgba(59, 130, 246, 0.2);">
+            <i class="fas fa-headset" style="font-size: 2rem; color: #3b82f6;"></i>
+            <div style="text-align: left;">
+              <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 5px;">Hubungi Kami:</p>
+              <p style="font-size: 1.3rem; font-weight: bold; color: #1e40af;">+62 853-5322-2333</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="kontak">
+    <div class="footer-content">
+      <div class="footer-col">
+        <div class="logo-footer">PARKIN PRODUCTION</div>
+        <p style="margin:20px 0; font-size:1.1rem; opacity:0.9;">Professional Sound System & Lighting Indonesia</p>
+        <div class="social-links">
+          <a href="https://wa.me/6285353222333" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/risdiyan.parkinsound.7" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/search/top?q=iyan%20parkin" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.youtube.com/@iyan_parkinsound" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="services.html">Sound System Rental</a></li>
+          <li><a href="services.html">Lighting & Stage</a></li>
+          <li><a href="services.html">LED Screen</a></li>
+          <li><a href="services.html">Event Production</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +62 853-5322-2333</li>
+          <li><i class="fas fa-envelope"></i> iyanparkin77@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Banjar Patroman, Indonesia</li>
+          <li><i class="fas fa-clock"></i> 24/7 Available</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 CV. Parkin Production – All Rights Reserved | Made with <i class="fas fa-heart" style="color:#ff0000;"></i> for Great Events</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Form handling ke Gmail Compose
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        eventType: document.getElementById('event-type').value,
+        eventDate: document.getElementById('event-date').value,
+        location: document.getElementById('location').value,
+        message: document.getElementById('message').value
+      };
+
+      const subject = encodeURIComponent(`Permintaan Penawaran Event - ${formData.name || 'Klien'}`);
+      const bodyLines = [
+        'Halo CV. Parkin Production,',
+        '',
+        `Nama: ${formData.name}`,
+        `Email: ${formData.email}`,
+        `No. Telp: ${formData.phone}`,
+        `Jenis Event: ${formData.eventType}`,
+        `Tanggal Event: ${formData.eventDate || 'Belum ditentukan'}`,
+        `Lokasi: ${formData.location}`,
+        '',
+        'Pesan:',
+        `${formData.message}`
+      ];
+
+      const body = encodeURIComponent(bodyLines.join('\n'));
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=iyanparkin77@gmail.com&su=${subject}&body=${body}`;
+
+      window.open(gmailUrl, '_blank');
+
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.style.display = 'block';
+      messageDiv.style.background = 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.1))';
+      messageDiv.style.border = '2px solid #22c55e';
+      messageDiv.style.color = '#15803d';
+      messageDiv.innerHTML = '<i class="fas fa-check-circle"></i> Pesan Anda diarahkan ke Gmail. Jika belum terbuka, kirim manual ke iyanparkin77@gmail.com';
+
+      this.reset();
+    });
+  </script>
+</body>
+</html>
